@@ -8,7 +8,5 @@ Its created with React (create-react-app) with Tailwind css
 - Formik
 
 ## Install
-    ```
     npm i
     npm run start
-    ```
