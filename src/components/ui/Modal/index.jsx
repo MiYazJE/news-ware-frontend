@@ -10,7 +10,7 @@ const Modal = ({ show, hide, title, children }) => {
           open={show}
           onClose={hide}
           as="div"
-          className="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto"
+          className="fixed z-50 inset-0 flex items-center justify-center overflow-y-auto"
         >
           <div className="flex flex-col py-8 px-4 text-center">
             <Dialog.Overlay />
