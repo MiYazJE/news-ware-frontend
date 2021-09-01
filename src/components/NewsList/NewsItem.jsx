@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../ui/Button'
 
-const NewsItem = ({ title, _id, author, description, isArchived, content, toggleArchived, deleteArticle }) => {
+const NewsItem = ({ title, _id, author, urlImage, description, isArchived, content, toggleArchived, deleteArticle }) => {
   const [isLoading, setIsLoading] = useState(false)
   const [isDeleting, setIsDeleting] = useState(false)
 
@@ -41,9 +41,8 @@ const NewsItem = ({ title, _id, author, description, isArchived, content, toggle
 
       <div className="w-full sm:h-auto h-72">
         <img
-          loading="lazy"
           className="h-full w-full object-cover rounded-tr-xl rounded-tl-xl sm:rounded-tl-none rounded-br-none sm:rounded-br-xl"
-          src="https://source.unsplash.com/random"
+          src={urlImage}
           alt="image of the article"
         />
       </div>
